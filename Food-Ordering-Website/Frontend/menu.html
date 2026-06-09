@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Food Express - Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<div id="toast">
+
+    Item Added To Cart ✅
+
+</div>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <h1>Food Express</h1>
+
+        <div>
+            <a href="index.html">Home</a>
+            <a href="cart.html">🛒 Cart (<span id="cart-count">0</span>)</a>
+            <a href="admin.html">Admin</a>
+        </div>
+    </nav>
+
+    <!-- Heading -->
+    <h2>Popular Food Items</h2>
+
+<div class="search-box">
+    <div class="filter-buttons">
+
+    <button onclick="filterFood('all')">All</button>
+
+    <button onclick="filterFood('pizza')">Pizza</button>
+
+    <button onclick="filterFood('burger')">Burger</button>
+
+    <button onclick="filterFood('biryani')">Biryani</button>
+
+</div>
+
+<br>
+
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="🔍 Search Food..."
+        onkeyup="searchFood()"
+    >
+
+</div>
+
+<br>
+
+    <!-- Navigation Buttons -->
+    <div style="text-align:center;">
+
+    <a href="index.html" class="back-btn">
+         Back To Restaurants
+    </a>
+
+    <a href="cart.html" class="cart-btn">
+        🛒 View Cart
+    </a>
+
+</div>
+
+    <!-- Food Items -->
+   <div class="restaurant-container">
+
+    <div class="restaurant-card pizza">
+
+        <span class="favorite">
+    🤍
+         </span>
+
+        <img src="images/pizza.jpg" alt="Pizza">
+
+        <h3>🍕 Margherita Pizza</h3>
+
+        <p>⭐ 4.5 Rating</p>
+
+        <p>🕒 25 mins</p>
+
+        <p>🔥 20% OFF</p>
+
+        <p>₹299</p>
+
+        <button onclick="addToCart('Margherita Pizza',299)">
+            Add To Cart
+        </button>
+    </div>
+
+    <div class="restaurant-card burger">
+
+        <span class="favorite">
+    🤍
+</span>
+
+        <img src="images/burger.jpg" alt="Burger">
+
+        <h3>🍔 Cheese Burger</h3>
+
+        <p>⭐ 4.3 Rating</p>
+
+        <p>🕒 20 mins</p>
+
+        <p>🔥 15% OFF</p>
+
+        <p>₹149</p>
+
+        <button onclick="addToCart('Cheese Burger',149)">
+            Add To Cart
+        </button>
+    </div>
+
+    <div class="restaurant-card biryani">
+
+        <span class="favorite">
+    🤍
+</span>
+        <img src="images/biryani.jpg" alt="Biryani">
+
+        <h3>🍗 Chicken Biryani</h3>
+
+        <p>⭐ 4.8 Rating</p>
+
+        <p>🕒 30 mins</p>
+
+        <p>🔥 25% OFF</p>
+
+        <p>₹249</p>
+
+        <button onclick="addToCart('Chicken Biryani',249)">
+            Add To Cart
+        </button>
+    </div>
+
+</div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

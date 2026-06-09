@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Checkout</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="checkout-container">
+
+        <div class="checkout-card">
+
+            <h1>🛒 Checkout</h1>
+
+            <form id="orderForm">
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Enter Your Name"
+                    required
+                >
+
+                <input
+                    type="text"
+                    id="phone"
+                    placeholder="Enter Phone Number"
+                    required
+                >
+
+                <textarea
+                    id="address"
+                    placeholder="Enter Address"
+                    required
+                ></textarea>
+
+                <button type="submit">
+
+                    Place Order
+
+                </button>
+
+            </form>
+
+            <br>
+
+            <a href="admin.html"
+               class="admin-link">
+
+                Go To Admin Dashboard
+
+            </a>
+
+        </div>
+
+    </div>
+
+    <script src="checkout.js"></script>
+
+</body>
+
+</html>
